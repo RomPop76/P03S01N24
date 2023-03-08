@@ -29,10 +29,10 @@ colors[2] = "green";
 
 
 // W każdym z tych sposobów powstaje instacja Tablicy o tych samych właściwościach i metodach (co widzimy po konstruktorze).
-// console.log(typeof nameList);
-// console.log(nameList);
-// console.log(typeof colors);
-// console.log(colors);
+console.log(typeof nameList);
+console.log(nameList);
+console.log(typeof colors);
+console.log(colors);
 
 
 // Pamietajmy, że możemy edytować tablicę nawet jeśli jest ona przypisana do zmiennej const. Najczęściej więc wybierzemy dla tablicy zmienną const. Nie możemy jednak nic innego przypisać do tej zmiennej
@@ -42,7 +42,7 @@ let myArrayLet = [];
 myArrayConst[0] = "pierwszy const";
 myArrayLet[0] = "pierwszy let";
 // myArrayConst = "coś innego";
-// myArrayLet = "coś innego";
+myArrayLet = "coś innego";
 
 
 
@@ -56,8 +56,8 @@ const differentValues = ["string", 20, {}, ["jeden", "dwa"], null]
 // używamy indeksu. Indeks od zera i w nawiasach kwadratowych
 // console.log(nameList[1]);
 const popularName = nameList[2];
-// nameList[4] = "Witomysł";
-// nameList[2] === "Gniewomir";
+nameList[4] = "Witomysł";
+nameList[2] === "Gniewomir";
 
 
 // TWORZENIE NOWYCH ELEMENTÓW I MODYFIKOWANIE ISTNIEJĄCYCH W TABLICY
@@ -95,7 +95,7 @@ cities[cities.length] = "Tokio";
 cities[cities.length] = "Pekin";
 
 // powiększenie, zmniejszenie, wyzerowanie tablicy
-// users.length = 20;
+users.length = 20;
 cities.length += 2;
 // cities.length = cities.length + 2;
 // cities.length = 3;
